@@ -2,7 +2,7 @@
   "name": "noflopsquad-github-io",
   "private": true,
   "dependencies": {
-    "jquery": "~1.10.2"
+
   },
   "devDependencies": {}
 }
