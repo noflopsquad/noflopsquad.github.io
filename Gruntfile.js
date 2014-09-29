@@ -1,4 +1,4 @@
-// Generated on 2014-09-24 using generator-webapp 0.4.6
+// Generated on 2014-05-26 using generator-webapp 0.4.6
 'use strict';
 
 // # Globbing
@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                 tasks: ['compass:server', 'autoprefixer']
             },
             styles: {
-                files: ['<%= yeoman.app %>/styles/{,*/}*.css'],
+                files: ['<%= yeoman.app %>/styles/{,*/}*.css', '<%= yeoman.app %>/images/icons/*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             livereload: {
@@ -142,6 +142,7 @@ module.exports = function (grunt) {
         // Compiles Sass to CSS and generates necessary files if requested
         compass: {
             options: {
+                require: 'susy',
                 sassDir: '<%= yeoman.app %>/styles',
                 cssDir: '.tmp/styles',
                 generatedImagesDir: '.tmp/images/generated',
@@ -153,7 +154,9 @@ module.exports = function (grunt) {
                 httpGeneratedImagesPath: '/images/generated',
                 httpFontsPath: '/styles/fonts',
                 relativeAssets: false,
-                assetCacheBuster: false
+                assetCacheBuster: false,
+                sourcemap: true,
+                bundleExec: true
             },
             dist: {
                 options: {
@@ -162,7 +165,7 @@ module.exports = function (grunt) {
             },
             server: {
                 options: {
-                    debugInfo: true
+                    debugInfo: true,
                 }
             }
         },
@@ -253,7 +256,7 @@ module.exports = function (grunt) {
                     removeCommentsFromCDATA: true,
                     removeEmptyAttributes: true,
                     removeOptionalTags: true,
-                    removeRedundantAttributes: true,
+                    removeRedundantAttributes: false,
                     useShortDoctype: true
                 },
                 files: [{
@@ -314,6 +317,13 @@ module.exports = function (grunt) {
                 cwd: '<%= yeoman.app %>/styles',
                 dest: '.tmp/styles/',
                 src: '{,*/}*.css'
+            },
+            docs: {
+                expand: true,
+                dot: true,
+                cwd: 'dist/styles',
+                dest: 'doc_assets/build/css',
+                src: '{,*/}*.css'
             }
         },
 
@@ -334,6 +344,19 @@ module.exports = function (grunt) {
                 'imagemin',
                 'svgmin'
             ]
+        },
+
+        grunticon: {
+            icons: {
+                files: [{
+                    expand: true,
+                    cwd: 'build/icons/',
+                    src: ['*.svg', '*.png'],
+                    dest: 'app/images/icons/'
+                }],
+                options: {
+                }
+            }
         }
     });
 
@@ -381,7 +404,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy:dist',
-        'rev',
+        // 'rev',
         'usemin',
         'htmlmin'
     ]);
@@ -391,4 +414,10 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
+
+    grunt.registerTask('icons', [
+        'grunticon:icons'
+    ]);
+
+
 };
