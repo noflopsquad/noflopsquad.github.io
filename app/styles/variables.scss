@@ -2,3 +2,12 @@ $base-unit: .5em;
 $box-unit: $base-unit * 24;
 $bg-color: #000 !default;
 $contrast-color: #fff !default;
+
+
+$susy: (
+  columns: 12,
+  gutters: 1/2,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+);

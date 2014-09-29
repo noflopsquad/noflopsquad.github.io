@@ -25,17 +25,30 @@ body {
   padding: 1em 0;
 }
 
-.colors {
-  position: fixed;
-}
-
 .page {
   @include container(75em);
+  padding-top: 12em;
 }
 
 .box {
-  @include box-size(1, 1);
   margin-top: $base-unit;
+}
+
+.team {
+  @include clearfix;
+
+}
+
+.member {
+  @include span(2 of 12);
+
+  &.last {
+    @include last;
+  }
+  img {
+    width: 100%;
+    @include border-radius(50%);
+  }
 }
 
 .sixteen {
@@ -133,9 +146,7 @@ body {
   }
 }
 
-.team {
-  @include clearfix;
-}
+
 
 .group-21 {
   @include clearfix;
