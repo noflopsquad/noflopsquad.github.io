@@ -15,11 +15,14 @@ body {
 
 .banner {
   background-color: #000;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, .7);
 }
 
 .banner-image {
   width: 100%;
-  padding: 7em 0;
+  padding: 1em 0;
 }
 
 .colors {
@@ -27,7 +30,7 @@ body {
 }
 
 .page {
-  @include container(80em);
+  @include container(75em);
 }
 
 .box {
