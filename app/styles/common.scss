@@ -123,3 +123,10 @@ body {
     line-height: 150%;
   }
 }
+
+
+.icon-github {
+  background: url('../images/github2.png') no-repeat;
+  @include prefix(2em);
+  padding-top: 1em;
+}
