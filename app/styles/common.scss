@@ -1,0 +1,156 @@
+@import 'susy';
+@import 'compass';
+@import 'mixins';
+
+$bg-color: #fff;
+$contrast-color: #000 !default;
+
+html {
+  font-family: "Quicksand";
+}
+
+body {
+  background-color: $bg-color;
+}
+
+.banner {
+  background-color: #000;
+  padding: 2em 0;
+}
+
+.banner-image {
+  width: 100%;
+}
+
+.colors {
+  position: fixed;
+}
+
+.page {
+  @include container(80em);
+}
+
+.box {
+  @include box-size(1, 1);
+  margin-top: $base-unit;
+}
+
+.sixteen {
+  @extend .box;
+  @include box-size(4, 4);
+}
+
+.two {
+  @extend .box;
+  @include box-size(2, 1);
+}
+
+.four-plane {
+  @extend .box;
+  @include box-size(4, 2);
+}
+
+.four {
+  @extend .box;
+  @include box-size(2, 2);
+}
+
+.totally-centered {
+  position: relative;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-header {
+  @extend .box;
+  @include box-size(6, .5);
+  span {
+    font-size: 5 * $base-unit;
+  }
+}
+
+.bordered {
+  border: 1px dotted $contrast-color;
+}
+
+.group-1 {
+  @include clearfix;
+  .sixteen {
+    float: left;
+
+    .we {
+      @extend .totally-centered;
+      font-size: 20 * $base-unit;
+      opacity: .6;
+    }
+  }
+
+  .two {
+    float: left;
+    margin-left: $base-unit;
+    text-align: center;
+
+    img {
+      @extend .totally-centered;
+    }
+  }
+}
+
+.banner {
+  width: 100%;
+}
+
+.principles {
+  img {
+    @extend .totally-centered;
+  }
+
+  p {
+    padding: 2 * $base-unit;
+    font-size: 3 * $base-unit;
+    opacity: .6;
+    line-height: 150%;
+  }
+
+  .reflect {
+    @include leftimg;
+  }
+
+  .talk {
+    @include rightimg;
+  }
+
+  .launch {
+    @include leftimg;
+  }
+
+  .transparency {
+    @include rightimg;
+  }
+}
+
+.team {
+  @include clearfix;
+}
+
+.group-21 {
+  @include clearfix;
+  .four {
+    @include person;
+  }
+}
+
+.group-22 {
+  @include clearfix;
+  .four {
+    @include person;
+  }
+}
+
+.group-23 {
+  @include clearfix;
+  .four {
+    @include person;
+  }
+}
