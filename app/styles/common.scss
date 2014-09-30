@@ -81,6 +81,8 @@ body {
 }
 
 .principles {
+  @include container(60em);
+  @include pad(2em);
 
   img {
     @extend .totally-centered;
