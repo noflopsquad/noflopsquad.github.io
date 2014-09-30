@@ -2,7 +2,7 @@
   "name": "noflopsquad-github-io",
   "private": true,
   "dependencies": {
-
+    "jquery-waypoints": "~2.0.5"
   },
   "devDependencies": {}
 }
