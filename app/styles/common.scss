@@ -41,7 +41,7 @@ body {
 
 .team {
   @include clearfix;
-  padding: 10% 0;
+  padding: 10% 0 15% 0;
 }
 
 .member {
@@ -96,6 +96,8 @@ body {
 }
 
 .principle {
+  padding: 1.5em 0;
+
   h2 {
     margin-bottom: 0;
     font-size: 2em;
