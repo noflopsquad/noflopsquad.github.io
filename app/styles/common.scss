@@ -31,8 +31,8 @@ body {
 }
 
 .banner-image {
-  width: 50%;
   padding: .5em 0;
+  width: 50%;
 }
 
 .page {
@@ -41,7 +41,7 @@ body {
 
 .team {
   @include clearfix;
-  padding: 10% 0 10% 0;
+  padding: 10% 0;
 }
 
 .member {
@@ -51,6 +51,7 @@ body {
   &.last {
     @include last;
   }
+
   img {
     width: 100%;
     @include border-radius(50%);
