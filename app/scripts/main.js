@@ -8,6 +8,7 @@ function changeBanner() {
     changeBackground('#team', 'images/logo-banner.png');
     changeBackground('#slow-programming', 'images/reflect.png');
     changeBackground('#no-shadowing', 'images/transparency.png');
+    changeBackground('#mvp', 'images/launch.png');
 }
 
 $(document).ready(function() {
