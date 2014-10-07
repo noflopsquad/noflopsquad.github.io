@@ -1,6 +1,7 @@
 @import 'susy';
 @import 'compass';
 @import 'mixins';
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400);
 
 $bg-color: #fff;
 $contrast-color: #000 !default;
@@ -101,6 +102,18 @@ body {
   h2 {
     margin-bottom: 0;
     font-size: 2em;
+  }
+}
+
+.footer {
+  color: $contrast-color;
+  background-color: black;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5em;
   }
 }
 
