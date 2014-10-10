@@ -7,7 +7,7 @@ $bg-color: #fff;
 $contrast-color: #000 !default;
 
 html {
-  font-family: "Quicksand";
+  font-family: 'Quicksand';
 }
 
 body {
@@ -24,11 +24,11 @@ body {
 }
 
 .banner {
-  background-color: #000;
   position: fixed;
   z-index: 1;
   background-color: rgba(0, 0, 0, .8);
   @extend .center;
+  width: 100%;
 }
 
 .banner-image {
@@ -89,11 +89,6 @@ body {
 
 .bordered {
   border: 1px dotted $contrast-color;
-}
-
-
-.banner {
-  width: 100%;
 }
 
 .principles {
