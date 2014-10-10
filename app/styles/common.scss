@@ -135,6 +135,12 @@ body {
 .social-links {
   position: relative;
   @include pad(4em);
+
+  &.footer-links {
+    @include container(10em);
+    margin: 1.5em auto;
+    padding-bottom: 1.5em;
+  }
 }
 
 .icon-github {
@@ -151,6 +157,33 @@ body {
   left: 0;
   position: absolute;
   background: url('../images/twitter.png') no-repeat;
+  @include prefix(2em);
+  padding-top: 2em;
+}
+
+.icon-github-white {
+  top: 0;
+  right: 42%;
+  position: absolute;
+  background: url('../images/github2_white.png') no-repeat;
+  @include prefix(2em);
+  padding-top: 2em;
+}
+
+.icon-twitter-white {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: url('../images/twitter_white.png') no-repeat;
+  @include prefix(2em);
+  padding-top: 2em;
+}
+
+.icon-medium-white {
+  top: 0;
+  right: 0;
+  position: absolute;
+  background: url('../images/medium.png') no-repeat;
   @include prefix(2em);
   padding-top: 2em;
 }
