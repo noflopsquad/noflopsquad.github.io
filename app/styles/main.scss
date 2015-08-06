@@ -4,3 +4,35 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+h1 {
+  font-weight: 600;
+}
+
+.title {
+  margin-bottom: 1em;
+}
+
+.banner {
+  @include panel(
+    // Sets the panel background color. Default: $panel-pg
+    $bg:black,
+    // Sets the panel padding amount. Default: $panel-padding
+    $padding:100px,
+    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
+    $adjust:true
+  );
+
+  color: $white;
+  margin-bottom: 2em;
+  
+  h1 {
+    font-weight: 900;
+    font-size: rem-calc(120);
+  }
+
+  span {
+   font-weight: 900;
+   font-size: rem-calc(40);
+  }
+}
