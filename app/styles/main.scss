@@ -22,10 +22,11 @@ h5 {
     // Sets the panel background color. Default: $panel-pg
     $bg:black,
     // Sets the panel padding amount. Default: $panel-padding
-    $padding:100px,
+    $padding:50px,
     // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
     $adjust:true
   );
+
 
   color: $white;
   margin-bottom: 2em;
@@ -33,6 +34,9 @@ h5 {
   h1 {
     font-weight: 900;
     font-size: rem-calc(120);
+    border-left: 15px solid white;
+    padding-left: 0.1em;
+    line-height: 0.8em;
   }
 
   span {
@@ -52,4 +56,8 @@ h5 {
 .avatar {
   border-radius: 50%;
   width: 50%;
+}
+
+.social-icon {
+  padding: 0.25em 0.25em;
 }
