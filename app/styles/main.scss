@@ -26,7 +26,7 @@ h5 {
   h1 {
     color: $white;
     font-weight: 900;
-    font-size: rem-calc(120);
+    font-size: rem-calc(80);
     border-left: 15px solid white;
     padding-left: 0.1em;
     line-height: 0.8em;
@@ -58,4 +58,10 @@ h5 {
 
 .social-icon {
   padding: 0.25em 0.25em;
+}
+
+.referals {
+  img {
+    padding: 0 1em;
+  }
 }
