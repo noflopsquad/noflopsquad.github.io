@@ -19,20 +19,12 @@ h5 {
 }
 
 .banner {
-  @include panel(
-    // Sets the panel background color. Default: $panel-pg
-    $bg:black,
-    // Sets the panel padding amount. Default: $panel-padding
-    $padding:50px,
-    // Sets the font color based on the darkness of the bg & resets header line-heights for panels. Default: $panel-header-adjust
-    $adjust:true
-  );
-
-
-  color: $white;
-  margin-bottom: 2em;
+  padding: 50px;
+  background-color: black;
+  border: none;
   
   h1 {
+    color: $white;
     font-weight: 900;
     font-size: rem-calc(120);
     border-left: 15px solid white;
@@ -52,6 +44,10 @@ h5 {
 
 .member {
   text-align: center;
+}
+
+.member-name {
+  font-weight: 100;
 }
 
 .avatar {
