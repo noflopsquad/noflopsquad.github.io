@@ -13,6 +13,10 @@ h1 {
   margin-bottom: 1em;
 }
 
+h5 {
+  font-weight: 600;
+}
+
 .banner {
   @include panel(
     // Sets the panel background color. Default: $panel-pg
@@ -35,4 +39,17 @@ h1 {
    font-weight: 900;
    font-size: rem-calc(40);
   }
+}
+
+.team {
+  margin-bottom: 2em;
+}
+
+.member {
+  text-align: center;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50%;
 }
