@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,600,400italic,600italic,700,700italic,800,800italic);
 @import '../bower_components/foundation/scss/foundation';
+@import 'compass/css3';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -56,6 +57,7 @@ h5 {
 .avatar {
   border-radius: 50%;
   width: 50%;
+  @include box-shadow(grey 1px 1px 10px);
 }
 
 .social-icon {
