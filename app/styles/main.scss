@@ -2,32 +2,51 @@
 @import '../bower_components/foundation/scss/foundation';
 @import 'compass/css3';
 
+$orange: #EB974E;
+$strong-orange: #D35400;
+$flat-grey: #ECF0F1;
+
 body {
   font-family: 'Open Sans', sans-serif;
+  background: $flat-grey;
 }
 
-h1 {
-  font-weight: 600;
+h1, h2 {
+  font-weight: 800;
 }
 
 .title {
   margin-bottom: 1em;
 }
 
+.claim {
+  font-weight: 300;
+}
+
 h5 {
   font-weight: 600;
 }
 
+hr {
+  border: solid $orange;
+  border-width: 1px 0 0;
+
+}
+
+.container { 
+  margin-top: 2em;
+ }
+
 .banner {
-  padding: 50px;
+  border-bottom: 2px solid $orange;
+  padding: 50px 50px 0 50px;
   background-color: black;
-  border: none;
   
   h1 {
     color: $white;
     font-weight: 900;
     font-size: rem-calc(80);
-    border-left: 15px solid white;
+    border-left: 15px solid $strong-orange;
     padding-left: 0.1em;
     line-height: 0.8em;
   }
@@ -44,16 +63,19 @@ h5 {
 
 .member {
   text-align: center;
+
+  //@include box-shadow(grey 1px 1px 10px);
 }
 
 .member-name {
   font-weight: 100;
+  font-size: rem-calc(20);
 }
 
 .avatar {
-  border-radius: 50%;
-  width: 50%;
-  @include box-shadow(grey 1px 1px 10px);
+  filter: grayscale(100%);
+  width: 100%;
+  border-bottom: 1px solid grey; 
 }
 
 .social-icon {
@@ -63,5 +85,45 @@ h5 {
 .referals {
   img {
     padding: 0 1em;
+  }
+}
+
+.top-bar {
+  background: $black ;
+}
+
+.top-bar-section {
+}
+
+.top-bar-section ul li > a {
+  font-weight: 700;
+  font-size: rem-calc(20);
+  color: black;
+  background: none;
+  
+}
+
+.top-bar-section ul li {
+  background: none;
+  
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+  color: $strong-orange;
+  background: none;
+    
+  &:hover { 
+    background: none;
+    color: $orange;
+  }
+}  
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+  background: none;
+  border-bottom: 3px solid $strong-orange;
+
+  &:hover {
+    color: $orange;
+    background: none;
   }
 }
