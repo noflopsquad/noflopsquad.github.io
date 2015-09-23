@@ -114,7 +114,7 @@ hr {
 }
 
 .top-bar-section ul li > a {
-  font-weight: 700;
+  font-weight: 400;
   font-size: rem-calc(20);
   color: black;
   background: none;
@@ -137,9 +137,10 @@ hr {
 }  
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: none;
-  border-bottom: 3px solid $strong-orange;
-
+  background: linear-gradient($orange, $orange) no-repeat;
+  background-size: 93% 4px;
+  background-position: 5px 1.7em;
+ 
   &:hover {
     color: $orange;
     background: none;
