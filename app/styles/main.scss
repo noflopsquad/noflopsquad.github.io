@@ -137,11 +137,14 @@ hr {
 }  
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: none;
-  border-bottom: 4px solid $orange;
+  background: linear-gradient($orange, $orange) no-repeat;
+  background-size: 93% 8px;
+  background-position: 7px 1.9em;
 
   &:hover {
     color: $orange;
-    background: none;
+    background: linear-gradient($orange, $orange) no-repeat;
+    background-size: 93% 8px;
+    background-position: 7px 1.9em;
   }
 }
