@@ -23,8 +23,16 @@ h1, h2 {
   font-weight: 300;
 }
 
+h2 {
+  font-size: 48px;
+}
+
 h5 {
   font-weight: 600;
+}
+
+p {
+  font-size: 20px;
 }
 
 hr {
@@ -35,6 +43,10 @@ hr {
 
 .container { 
   margin-top: 2em;
+ }
+
+ section.row {
+  margin-bottom: 1em;
  }
 
 .banner {
@@ -86,6 +98,12 @@ hr {
   img {
     padding: 0 1em;
   }
+
+  h3 {
+    font-weight: 600;
+  }
+
+  margin-bottom: 2em;
 }
 
 .top-bar {

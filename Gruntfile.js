@@ -327,7 +327,16 @@ module.exports = function (grunt) {
                 options: {
                 }
             }
-        }
+        },
+
+        'gh-pages': {
+            options: {
+              base: 'dist',
+              repo: 'https://github.com/noflopsquad/noflopsquad.github.io.git',
+              branch: 'master'
+            },
+            src: '**/*'
+          }
     });
 
 
@@ -371,5 +380,9 @@ module.exports = function (grunt) {
 
     grunt.registerTask('icons', [
         'grunticon:icons'
+    ]);
+
+    grunt.registerTask('deploy', [
+        'build', 'gh-pages'
     ]);
 };
