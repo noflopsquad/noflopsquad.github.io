@@ -43,7 +43,7 @@ hr {
 }
 
 footer {
-  padding: 1em calc(50% - 450px);
+  padding: 1em calc(50% - 680px);
 }
 
 .container { 
@@ -160,9 +160,4 @@ footer {
     background-size: 93% 8px;
     background-position: 7px 1.9em;
   }
-}
-
-.fake-content {
-  content: '';
-  height: 40px;
 }
