@@ -42,6 +42,10 @@ hr {
 
 }
 
+footer {
+  padding: 1em calc(50% - 450px);
+}
+
 .container { 
   margin-top: 2em;
  }
@@ -96,7 +100,6 @@ hr {
 
 .avatar {
   width: 100%;
-  border-bottom: 1px solid grey; 
 }
 
 .social {
@@ -157,4 +160,8 @@ hr {
     background-size: 93% 8px;
     background-position: 7px 1.9em;
   }
+}
+
+.fake-content {
+  content: '';
 }
