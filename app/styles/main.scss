@@ -50,7 +50,7 @@ hr {
  }
 
 .banner {
-  border-bottom: 2px solid $orange;
+  border-bottom: 2px solid $strong-orange;
   padding: 50px 50px 0 50px;
   background-color: black;
   
@@ -84,8 +84,12 @@ hr {
   font-size: rem-calc(20);
 }
 
-.avatar {
+.filter {
   filter: grayscale(100%);
+  
+}
+
+.avatar {
   width: 100%;
   border-bottom: 1px solid grey; 
 }
@@ -116,34 +120,31 @@ hr {
 .top-bar-section ul li > a {
   font-weight: 400;
   font-size: rem-calc(20);
-  color: black;
   background: none;
-  
 }
 
 .top-bar-section ul li {
   background: none;
-  
 }
 
 .top-bar-section li:not(.has-form) a:not(.button) {
   color: $strong-orange;
   background: none;
     
-  &:hover { 
+  &:hover {
     background: none;
     color: $orange;
   }
 }  
 
 .top-bar-section li.active:not(.has-form) a:not(.button) {
-  background: linear-gradient($orange, $orange) no-repeat;
+  background: linear-gradient($strong-orange, $strong-orange) no-repeat;
   background-size: 93% 8px;
   background-position: 7px 1.9em;
 
   &:hover {
     color: $orange;
-    background: linear-gradient($orange, $orange) no-repeat;
+    background: linear-gradient($strong-orange, $strong-orange) no-repeat;
     background-size: 93% 8px;
     background-position: 7px 1.9em;
   }
