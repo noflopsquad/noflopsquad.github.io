@@ -92,6 +92,9 @@ footer {
   margin-bottom: 3em;
   @media #{$medium-only} {
     margin-left: 1em;
+    &:last-child {
+      margin-bottom: 0px;
+    }
   }
 }
 
@@ -99,10 +102,9 @@ footer {
 
 .member-first {
   margin-top: 1.2em;
-}
-
-.member-bottom {
-  margin-top: 3em;
+  @media #{$medium-only} {
+    margin-top: 0;
+  }
 }
 
 .member-name {
