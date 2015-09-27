@@ -39,13 +39,12 @@ p {
 hr {
   border: solid $orange;
   border-width: 1px 0 0;
-
 }
 
 footer {
   padding: 1em calc(50% - 680px);
   max-width: none;
-  
+
 }
 
 .container { 
@@ -99,6 +98,10 @@ footer {
 
 .values {
   margin-top: 5.5em;
+  @media #{$medium-only} {
+    margin-top: 0;
+    
+  }
 }
 
 .avatar {
