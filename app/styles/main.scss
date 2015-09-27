@@ -23,10 +23,10 @@ h1, h2 {
   font-weight: 300;
   font-size: rem-calc(22);
   color: $orange;
-  border: 2px solid orange;
   padding: 2em;
   text-align: center;
   background: hsla(0,0%,100%,.3);
+  box-shadow: 0 0 0 2px hsla(0,0%,100%,.3), 0 0 0 4px $orange;
 }
 
 h2 {
