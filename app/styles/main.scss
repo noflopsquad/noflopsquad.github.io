@@ -44,7 +44,6 @@ hr {
 footer {
   padding: 1em calc(50% - 680px);
   max-width: none;
-
 }
 
 .container { 
@@ -86,6 +85,10 @@ footer {
   //@include box-shadow(grey 1px 1px 10px);
 }
 
+.member-bottom {
+  margin-top: 3em;
+}
+
 .member-name {
   font-weight: 200;
   font-size: rem-calc(20);
@@ -100,7 +103,7 @@ footer {
   margin-top: 5.5em;
   @media #{$medium-only} {
     margin-top: 0;
-    
+
   }
 }
 
