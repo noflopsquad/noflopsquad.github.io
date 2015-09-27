@@ -77,8 +77,19 @@ footer {
 
 .member {
   text-align: center;
+  margin-bottom: 3em;
+  @media #{$medium-only} {
+    margin-left: 7em;
+  }
+}
 
   //@include box-shadow(grey 1px 1px 10px);
+
+.member-first {
+  margin-top: 1.2em;
+  @media #{$medium-only} {
+    margin-top: 0;
+  }
 }
 
 .member-bottom {
@@ -99,7 +110,6 @@ footer {
   margin-top: 5.5em;
   @media #{$medium-only} {
     margin-top: 0;
-
   }
 }
 
