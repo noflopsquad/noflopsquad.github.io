@@ -48,7 +48,10 @@ footer {
 
 .container { 
   margin-top: 2em;
-  max-width: 100%;
+  margin: 1em calc(50% - 600px);
+  @media #{$medium-only} {
+    margin: 1em calc(50% - 340px)
+  }
  }
 
  section.row {
