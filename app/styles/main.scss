@@ -120,6 +120,8 @@ footer {
 
 .values {
   margin-top: 5.5em;
+  position: relative;
+  z-index: 1;
   @media #{$medium-only} {
     margin-top: 0;
   }
