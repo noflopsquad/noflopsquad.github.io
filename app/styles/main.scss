@@ -52,14 +52,6 @@ footer {
   max-width: none;
 }
 
-.container { 
-  margin-top: 2em;
-  margin: 1em calc(50% - 600px);
-  @media #{$medium-only} {
-    margin: 1em calc(50% - 340px)
-  }
- }
-
  section.row {
   margin-bottom: 1em;
  }
